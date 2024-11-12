@@ -1,6 +1,6 @@
 .item {
-  background: rgb(34,193,195);
-  background: linear-gradient(177deg, rgba(34,193,195,0.8982186624649859) 0%, rgba(253,187,45,0.8534007352941176) 100%);
+  background: rgba(34, 192, 195, 0.654);
+  background: linear-gradient(177deg, rgba(34, 192, 195, 0.633) 0%, rgba(253, 187, 45, 0.613) 100%);
   height: 50px;
   width: 50px;
   z-index: 20;
@@ -22,8 +22,8 @@
 .btn1 .item {
   transform: translateX(-70px) skewX(-20deg); /* Reset to original position */
   opacity: 1; /* Ensure opacity is back to full */
-  background: rgb(34,193,195);
-  background: linear-gradient(177deg, rgba(34,193,195,0.8982186624649859) 0%, rgba(253,187,45,0.8534007352941176) 100%);
+  background: rgba(34, 192, 195, 0.654);
+  background: linear-gradient(177deg, rgba(34, 192, 195, 0.633) 0%, rgba(253, 187, 45, 0.613) 100%);
 }
 .text1 {
   transform: translateY(0px); 

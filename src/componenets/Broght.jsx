@@ -5,21 +5,7 @@ function Broght() {
   const [centeredWords, setCenteredWords] = useState([]);  // State to track words in the center
   const [scrollY, setScrollY] = useState(0); // State to hold the scroll position
 
-  useEffect(() => {
-    // Function to update the scroll position
-    const handleScroll = () => {
-      setScrollY(window.scrollY); // Update the state with the current scroll Y position
-    };
 
-    // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-  console.log(scrollY)
   // Split the text into an array of words
   const wordsWithNum = [
     { "word": "We", "num": 600 },
@@ -91,7 +77,7 @@ function Broght() {
   
   
   return (
-    <div className="relative w-full h-screen bg-black pt-40">
+    <div className="relative w-full h-max bg-black pt-40">
       <div className="relative z-10 w-10/12 mx-auto text-white">
         <h4 className="uppercase text-slate-600 text-lg">manifesto</h4>
         <p className="font-bold text-white text-5xl mt-3 flex items-center justify-start flex-wrap gap-2" ref={textRef}>
